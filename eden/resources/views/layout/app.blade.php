@@ -16,7 +16,12 @@
 </head>
 
 <body>
-    <header id="site_header"></header>
+    <header id="site_header">
+        <nav>
+            <a href="{{ route('home') }}">Home</a>
+            <a href="{{ route('offerte') }}">Offerte</a>
+        </nav>
+    </header>
 
     <main id="site_main">
         @yield('content')
