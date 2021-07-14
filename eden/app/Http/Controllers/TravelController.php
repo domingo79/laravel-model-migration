@@ -14,3 +14,4 @@ class TravelController extends Controller
         // ddd(Travel::all());
     }
 }
+// Anche a me faceva cosi, per risolvere ho scritto questo nel modello  protected $table = 'travels'; visto che mi diceva che non trovava la tabella travel

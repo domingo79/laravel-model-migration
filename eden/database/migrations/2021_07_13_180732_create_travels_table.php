@@ -15,14 +15,8 @@ class CreateTravelsTable extends Migration
     {
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
-            $table->string('titolo', 60);
-            $table->string('localita', 150)->nullable();
-            $table->string('partenza', 150)->nullable();
-            $table->string('durata', 15)->nullable();
-            $table->string('sistemazione', 100)->nullable();
-            $table->string('trattamento', 150)->nullable();
-            $table->integer('prezzo')->nullable();
-            $table->text('poster')->nullable();
+            $table->string('titolo', 100);
+            $table->text('body');
             $table->timestamps();
         });
     }
